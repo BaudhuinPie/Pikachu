@@ -1,0 +1,63 @@
+/* __ style facebook __ */
+/* _ organisation des individus _ */
+
+#facebook
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* _ folder individu _ */
+.hi
+{
+    flex: 300px;
+    flex-direction:column ;
+    
+    align-items: center ;
+    
+    background-color: orange;
+}
+/*  - partie texte -  */
+ .persotexte
+{  
+    display: flex ;
+    flex-direction:column ;
+    
+    align-items: center ;
+     
+    background-color: rgba(220, 140, 100, 0.8) ;
+    min-width: 250px;
+    color: gray;
+}
+
+h3
+{
+    
+    background-color: blue ; 
+    padding: 40px ; 
+    margin : 40px ;
+    border-radius : 25px ; /* arrondi les coins */
+    box-shadow: 15px 20px 10px 6px rgb(63, 41, 0) ;
+    font-size: 6rem ;
+}
+.persotexte p {
+    font-size: 3rem ;
+    white-space: pre-wrap ;
+    margin: 0 ; 
+    padding: 0 ; 
+    text-align: center ;
+}
+/*  - - */
+
+.hi aside
+{
+    width: 100% ;
+    margin: 0 ;
+    padding: 0; 
+}
+img {
+    width: 100% ; 
+}
+
+/*  __ __ */
