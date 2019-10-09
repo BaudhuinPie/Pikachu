@@ -19,34 +19,40 @@
     background-color: orange;
 }
 /*  - partie texte -  */
- .persotexte
+.persotexte
 {  
     display: flex ;
     flex-direction:column ;
     
     align-items: center ;
-     
+    
+    margin : 10px ;
     background-color: rgba(220, 140, 100, 0.8) ;
-    min-width: 250px;
     color: gray;
+    box-shadow: inset 1px 2px 10px 4px rgb(255, 230, 0) ;
+    border-radius : 6px ;
+}
+.persotexte, .persotexte p 
+{
+    min-width: 300px;
 }
 
 h3
 {
     
     background-color: blue ; 
-    padding: 40px ; 
-    margin : 40px ;
+    padding: 20px ; 
+    margin : 20px ;
     border-radius : 25px ; /* arrondi les coins */
-    box-shadow: 15px 20px 10px 6px rgb(63, 41, 0) ;
-    font-size: 6rem ;
+    box-shadow: 5px 5px 6px 4px rgb(63, 41, 0) ;
+    font-size: 10vw ;
 }
 .persotexte p {
-    font-size: 3rem ;
+    font-size: 5vw ;
     white-space: pre-wrap ;
-    margin: 0 ; 
+    margin: 10px ; 
     padding: 0 ; 
-    text-align: center ;
+    text-align: center ; 
 }
 /*  - - */
 
@@ -56,8 +62,22 @@ h3
     margin: 0 ;
     padding: 0; 
 }
-img {
+#facebook img {
     width: 100% ; 
 }
 
 /*  __ __ */
+
+@media screen and (min-width: 500px) 
+{
+    .hi
+    {
+        max-height: 500px ;
+    }
+    h3 
+    {
+        color: white;
+    }
+}
+
+
