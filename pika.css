@@ -1,7 +1,82 @@
 
 
 
-@media all and (max-width: 961px)
+/* __ style facebook __ */
+/* _ organisation des individus _ */
+
+#facebook
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* _ folder individu _ */
+.hi
+{
+  flex: 300px;
+  flex-direction:column ;
+  align-items: center ;
+  background-color: orange;
+}
+/* - partie texte - */
+.persotexte
+{ 
+  display: flex ;
+  flex-direction:column ;
+  align-items: center ;
+  margin : 10px ;
+  background-color: rgba(220, 140, 100, 0.8) ;
+  color: gray;
+  box-shadow: inset 1px 2px 10px 4px rgb(255, 230, 0) ;
+  border-radius : 6px ;
+}
+.persotexte, .persotexte p 
+{
+  min-width: 300px;
+}
+
+h3
+{
+  background-color: blue ; 
+  padding: 20px ; 
+  margin : 20px ;
+  border-radius : 25px ; /* arrondi les coins */
+  box-shadow: 5px 5px 6px 4px rgb(63, 41, 0) ;
+  font-size: 10vw ;
+}
+.persotexte p 
+{
+  font-size: 5vw ;
+  white-space: pre-wrap ;
+  margin: 10px ; 
+  padding: 0 ; 
+  text-align: center ; 
+}
+/* - - */
+
+.hi aside
+{
+  width: 100% ;
+  margin: 0 ;
+  padding: 0; 
+}
+#facebook img 
+{
+  width: 100% ; 
+}
+
+/* __ __ */
+
+
+
+
+
+
+
+@media all and (max-width: 500px)
+
+
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
@@ -122,4 +197,22 @@ header h1
 #legroupe
 {
   width: 100%  
+}
+
+
+
+
+
+
+
+
+
+
+.hi
+{
+max-height: 500px ;
+}
+h3 
+{
+color: white;
 }
