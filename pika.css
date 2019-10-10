@@ -229,12 +229,17 @@ h3
 
 
   /* William */
+  aside p
+  {
+    
+    height: auto;
+    margin-top: 230px;
 
+  }
   aside p img
   {
-    width: 40%;
-    margin-left: 120px;
-    margin-top: 250px;
+    width: 100%;
+    
   }
 
   .adresse
@@ -255,13 +260,14 @@ h3
     flex-direction: column ;
     align-items: right;
     justify-content: flex-start;
-    background-color: lightgray;
+    background-color: white;
   }
 
   footer img
   {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+  
   }
 
   .adresse img
@@ -272,4 +278,3 @@ h3
  
 
 
-}
