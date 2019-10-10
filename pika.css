@@ -1,6 +1,14 @@
 
 
 
+#bloc_page
+{
+  width: 100%;
+  margin: auto;
+}
+
+
+/* Pierre et Marine */
 /* __ style facebook __ */
 /* _ organisation des individus _ */
 
@@ -69,150 +77,199 @@ h3
 /* __ __ */
 
 
+/* Guislain */
+ /*
+@media all and (max-width: 500px) */
 
-
-
-
-
-@media all and (max-width: 500px)
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
-body
+@media all and (max-device-width: 480px)
 {
-  background:#fff;
-  font-family:'Lato';
-  margin:0;
-  padding:0;
-}
 
-a
-{
-  color:rgb(238, 71, 99);
-  text-decoration:none;
-}
+  #bloc_page
+  {
+      width: auto;
+  }
 
-.material-icons
-{
-  font-size:24px;
-  margin-right:12px;
-  vertical-align:text-bottom;
-}
+  }
+  @import url('https://fonts.googleapis.com/css?family=Lato');
 
-.menu
-{
-  background: #ffbb00;
-  color:rgb(180, 30, 30);
-  height: 100px;
-  position:relative;
-}
+  body
+  {
+    background:rgb(255, 255, 255);
+    font-family:'Lato';
+    margin:0;
+    padding:0;
+  }
 
-.menu .title
-{
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 100px;
-  padding: 0 250px;
-}
+  a
+  {
+    color:rgb(238, 71, 99);
+    text-decoration:none;
+  }
 
-.menu nav
-{
-  background:inherit;
-  font-size:20px;
-  font-weight:bold;
-  height:0;
-  overflow:hidden;
-  text-transform:uppercase;
-  transition:height .2s;
-}
+  .material-icons
+  {
+    font-size:24px;
+    margin-right:12px;
+    vertical-align:text-bottom;
+  }
 
-.menu nav > *
-{
-  display:block;
-  letter-spacing:1px;
-  line-height: 7;
-  padding:0 20px;
-  width:100%;
-}
-
-.menu nav input
-{
-  background:rgba(0,0,0,.2);
-  border:none;
-  color:rgb(236, 85, 85);
-}
-
-.menu .burger
-{
-  appearance:none;
-  -moz-appearance:none;
-  -webkit-appearance:none;
-  color:inherit;
-  cursor:pointer;
-  font-family:'Material Icons';
-  font-size:30px;
-  line-height:100px;
-  margin:0;
-  outline:0;
-  padding:0;
-  position:absolute;
-  text-align:center;
-  top:0;
-  right:10px;
-  width:200px;
-}
-
-.menu .burger:before
-{
-  content: url('/home/wilder/Bureau/dehaze-24px.svg');
-}
-
-.menu .burger:checked:before
-{
-  content: url('/home/wilder/Bureau/clear-24px.svg');
-}
-
-.menu .burger:checked + nav
-{
-  height: calc(70vh - 50px);
-}
-
-header h1
-{
-    width: 90%;
-    height: 150px;
-    text-align: center;
-    line-height: 150px;
-    font-size: 3em;
-    font-style: bold;
-    margin-top: 600px;
-    border: 5px rgb(236, 85, 85) solid; 
+  .menu
+  {
     background: #ffbb00;
-    color: rgb(180, 30, 30);
-    margin-left: 50px;
-}
+    color:rgb(180, 30, 30);
+    height: 100px;
+    position:relative;
+  }
 
-#legroupe
-{
-  width: 100%  
-}
+  .menu .title
+  {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 100px;
+    padding: 0 200x;
+  }
+
+  .menu nav
+  {
+    background:inherit;
+    font-size:20px;
+    font-weight:bold;
+    height:0;
+    overflow:hidden;
+    text-transform:uppercase;
+    transition:height .2s;
+  }
+
+  .menu nav > *
+  {
+    display:block;
+    letter-spacing:1px;
+    line-height: 7;
+    padding:0 20px;
+    width:100%;
+  }
+
+  .menu nav input
+  {
+    background:rgba(0,0,0,.2);
+    border:none;
+    color:rgb(236, 85, 85);
+  }
+
+  .menu .burger
+  {
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    color:inherit;
+    cursor:pointer;
+    font-family:'Material Icons';
+    font-size:30px;
+    line-height:100px;
+    margin:0;
+    outline:0;
+    padding:0;
+    position:absolute;
+    text-align:center;
+    top:0;
+    right:10px;
+    width:200px;
+  }
+
+  .menu .burger:before
+  {
+    content: url('/home/wilder/Bureau/dehaze-24px.svg');
+  }
+
+  .menu .burger:checked:before
+  {
+    content: url('/home/wilder/Bureau/clear-24px.svg');
+  }
+
+  .menu .burger:checked + nav
+  {
+    height: calc(70vh - 50px);
+  }
+
+  header h1
+  {
+      width: 90%;
+      height: 150px;
+      text-align: center;
+      line-height: 150px;
+      font-size: 3em;
+      font-style: bold;
+      margin-top: 600px;
+      border: 5px rgb(236, 85, 85) solid; 
+      background: #ffbb00;
+      color: rgb(180, 30, 30);
+      margin-left: 50px;
+  }
+
+  input
+  {
+    font-size: 5em;
+  }
+
+  #legroupe
+  {
+    width: 100%  
+  }
+
+  /* Pierre et Marine */
+  .hi
+  {
+  max-height: 500px ;
+  }
+  h3 
+  {
+  color: white;
+  }
 
 
 
+  /* William */
+
+  aside p img
+  {
+    width: 40%;
+    margin-left: 120px;
+    margin-top: 250px;
+  }
+
+  .adresse
+  {
+    margin-top: 100px;
+  }
+
+  .adresse p
+  {
+    border: 3px solid rgb(180, 30, 30);
+    background: #ffbb00;
+    text-align: center;
+  }
+
+  footer
+  {
+    display: flex;
+    flex-direction: column ;
+    align-items: right;
+    justify-content: flex-start;
+    background-color: lightgray;
+  }
+
+  footer img
+  {
+    width: 100px;
+    height: 100px;
+  }
+
+  .adresse img
+  {
+    padding: 35px;
+
+  }
+ 
 
 
-
-
-
-
-
-.hi
-{
-max-height: 500px ;
-}
-h3 
-{
-color: white;
 }
