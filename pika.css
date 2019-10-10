@@ -7,90 +7,9 @@
   margin: auto;
 }
 
+/* Guislain-base :  */
 
-/* Pierre et Marine */
-/* __ style facebook __ */
-/* _ organisation des individus _ */
-
-#facebook
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* _ folder individu _ */
-.hi
-{
-  flex: 300px;
-  flex-direction:column ;
-  align-items: center ;
-  background-color: orange;
-}
-/* - partie texte - */
-.persotexte
-{ 
-  display: flex ;
-  flex-direction:column ;
-  align-items: center ;
-  margin : 10px ;
-  background-color: rgba(220, 140, 100, 0.8) ;
-  color: gray;
-  box-shadow: inset 1px 2px 10px 4px rgb(255, 230, 0) ;
-  border-radius : 6px ;
-}
-.persotexte, .persotexte p 
-{
-  min-width: 300px;
-}
-
-h3
-{
-  background-color: blue ; 
-  padding: 20px ; 
-  margin : 20px ;
-  border-radius : 25px ; /* arrondi les coins */
-  box-shadow: 5px 5px 6px 4px rgb(63, 41, 0) ;
-  font-size: 10vw ;
-}
-.persotexte p 
-{
-  font-size: 5vw ;
-  white-space: pre-wrap ;
-  margin: 10px ; 
-  padding: 0 ; 
-  text-align: center ; 
-}
-/* - - */
-
-.hi aside
-{
-  width: 100% ;
-  margin: 0 ;
-  padding: 0; 
-}
-#facebook img 
-{
-  width: 100% ; 
-}
-
-/* __ __ */
-
-
-/* Guislain */
- /*
-@media all and (max-width: 500px) */
-
-@media all and (max-device-width: 480px)
-{
-
-  #bloc_page
-  {
-      width: auto;
-  }
-
-  }
-  @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
   body
   {
@@ -173,17 +92,17 @@ h3
     text-align:center;
     top:0;
     right:10px;
-    width:200px;
+    width:40px;
   }
 
-  .menu .burger:before
+  .menu .burger::before
   {
-    content: url('/home/wilder/Bureau/dehaze-24px.svg');
+    content: url('./dehaze-24px.svg');
   }
 
-  .menu .burger:checked:before
+  .menu .burger:checked::before
   {
-    content: url('/home/wilder/Bureau/clear-24px.svg');
+    content: url('./clear-24px.svg');
   }
 
   .menu .burger:checked + nav
@@ -216,60 +135,197 @@ h3
     width: 100%  
   }
 
-  /* Pierre et Marine */
-  .hi
-  {
-  max-height: 500px ;
+
+/* Pierre et Marine */
+/* __ style facebook __ */
+/* _ organisation des individus _ */
+
+#facebook
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width : 70% ;
+  margin: auto ;
+  box-sizing: border-box ;
+}
+
+/* _ folder individu _ */
+.hi
+{
+  flex: 300px;
+  flex-direction:column ;
+  align-items: center ;
+  background-color: rgb(255, 230, 0);
+  width : auto ;
+}
+/* - partie texte - */
+.persotexte
+{ 
+  display: flex ;
+  flex-direction:column ;
+  align-items: center ;
+  margin : 10px ;
+  background-color: rgba(35, 255, 255, 0.8) ;
+  
+  box-shadow: inset 1px 1px 10px 4px rgb(137, 112, 196) ;
+  border-radius : 6px ;
+}
+.persotexte, .persotexte p 
+{
+  min-width: 300px;
+  overflow: auto ;
+}
+
+.persotexte h3
+{
+  background-color: rgb(30, 255, 0) ; 
+  padding: 20px ; 
+  margin : 20px ;
+  border-radius : 25px ; /* arrondi les coins */
+  box-shadow: 5px 5px 6px 4px rgb(35, 61, 146) ;
+  font-size: 7vw ;
+  color: black;
+}
+.persotexte p 
+{
+  font-size: 5vw ;
+  white-space: pre-line ;
+  margin: 10px ; 
+  padding: 0 ; 
+  text-align: center ; 
+  color: black;
+  
+}
+/* - - */
+
+.hi div
+{
+  width: 100% ;
+  margin: 0 ;
+  padding: 0; 
+}
+/* __ __ */
+
+/* ___ William ____ */
+
+aside p img
+{
+  width: 40%;
+  margin-left: 120px;
+  margin-top: 250px;
+}
+
+.adresse
+{
+  margin-top: 100px;
+}
+
+.adresse p
+{
+  border: 3px solid rgb(180, 30, 30);
+  background: #ffbb00;
+  text-align: center;
+}
+
+footer
+{
+  display: flex;
+  flex-direction: column ;
+  align-items: right;
+  justify-content: flex-start;
+  background-color: lightgray;
+}
+
+footer img
+{
+  width: 100px;
+  height: 100px;
+}
+
+.adresse img
+{
+  padding: 35px;
+
+}
+
+/* Guislain */
+ /*
+@media screen and (min-width: 500px) */
+/* ____________________________________________________________ */
+
+
+@media screen and (max-width: 499px)
+{
+  .hi div {
+    width: 100%;
+    overflow: hidden;
   }
-  h3 
-  {
-  color: white;
+
+  .hi div img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px)
+{
+  
+/* Pierre et Marine */
+/* _ folder individu _ */
+
+  
+  .hi div {
+    height: 250px;
+    /* overflow: hidden; */
   }
 
-
-
-  /* William */
-
-  aside p img
-  {
-    width: 40%;
-    margin-left: 120px;
-    margin-top: 250px;
+  .hi div img {
+    height: 100%;
   }
 
-  .adresse
+  .hi {
+    max-height: 700px ;
+    width: 100% ;
+    display: flex ;
+    flex-direction:row ;
+    flex-wrap: nowrap ;
+    align-items: center ;
+    justify-content: space-between ;
+    background-color: rgb(205, 247, 127) ;
+    margin-top : 15px;
+    margin-bottom: 15px ;
+    
+    
+  }  
+/*  - partie texte -  */
+
+  .persotexte
   {
-    margin-top: 100px;
+    height: 250px ;
+    max-width: 50vw ;
+    margin-top : 50px;
+    margin-bottom: 50px ;
+    box-shadow: none ;
+    border: 6px solid whitesmoke ;
   }
 
-  .adresse p
-  {
-    border: 3px solid rgb(180, 30, 30);
-    background: #ffbb00;
-    text-align: center;
+/* .persotexte, .persotexte p 
+{
+} */
+
+  .persotexte h3 {
+    font-size:  2rem ;
+    text-decoration: underline ;
+    border-radius: 0px ;
+    padding : 10px ;
+    color: black; 
+    box-shadow: 5px 5px 6px 4px rgba(35, 64, 156, 0.486) ;
   }
 
-  footer
-  {
-    display: flex;
-    flex-direction: column ;
-    align-items: right;
-    justify-content: flex-start;
-    background-color: lightgray;
+  .persotexte p {
+    font-size: 1rem;
+    text-align: left ;
+    
   }
-
-  footer img
-  {
-    width: 100px;
-    height: 100px;
-  }
-
-  .adresse img
-  {
-    padding: 35px;
-
-  }
- 
-
-
+/*  - - */
 }
